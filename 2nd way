@@ -1,0 +1,25 @@
+class calculator:
+    def __init__(self,n) -> None:       #constructor
+        self.num= n
+    def square(self):          #function to find square
+        self.square= (self.num) *(self.num)
+    def cube(self):             #function to find cube
+        self.cube = (self.num)*(self.num)*(self.num)
+    def sqroot(self):            #function to find square root
+        self.sqroot = (self.num)**0.5
+    def printData(self):
+        print(f"The square is {self.square}")
+        print(f"The cube is {self.cube}")
+        print(f"The squareroot is {self.sqroot}")
+
+result = calculator(9)   #Creating object of the class calcultor 
+result.square()
+result.cube()
+result.sqroot()
+result.printData()
+
+result2 = calculator(4)   #2nd object
+result2.square()
+result2.cube()
+result2.sqroot()
+result2.printData()
